@@ -1,0 +1,328 @@
+/* ==========================
+   RESET
+========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary:#2563eb;
+    --success:#16a34a;
+    --warning:#f59e0b;
+    --danger:#dc2626;
+    --info:#06b6d4;
+    --dark:#0f172a;
+    --light:#f8fafc;
+    --gray:#64748b;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f1f5f9;
+    color:#1e293b;
+    min-height:100vh;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+    background:linear-gradient(90deg,#0f172a,#1e293b,#1e3a8a);
+    box-shadow:0 4px 20px rgba(0,0,0,.15);
+    padding:15px 0;
+}
+
+.navbar-brand{
+    font-size:1.8rem;
+    font-weight:700;
+    color:white !important;
+}
+
+.navbar-nav .nav-link{
+    color:#e2e8f0 !important;
+    margin:0 5px;
+    padding:10px 15px !important;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    background:rgba(255,255,255,.1);
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+main{
+    min-height:80vh;
+    padding:30px 0;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    background:white;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.card-header{
+    border:none;
+    padding:15px 20px;
+    font-weight:600;
+    color:white;
+}
+
+.card-header.bg-primary{
+    background:linear-gradient(135deg,#2563eb,#3b82f6) !important;
+}
+
+.card-header.bg-success{
+    background:linear-gradient(135deg,#16a34a,#22c55e) !important;
+}
+
+.card-header.bg-warning{
+    background:linear-gradient(135deg,#f59e0b,#fbbf24) !important;
+}
+
+.card-header.bg-info{
+    background:linear-gradient(135deg,#0891b2,#06b6d4) !important;
+}
+
+.card-body{
+    padding:25px;
+}
+
+/* ==========================
+   DASHBOARD CARDS
+========================== */
+
+.border-left-primary{
+    border-left:5px solid #2563eb;
+}
+
+.border-left-success{
+    border-left:5px solid #16a34a;
+}
+
+.border-left-info{
+    border-left:5px solid #06b6d4;
+}
+
+.border-left-warning{
+    border-left:5px solid #f59e0b;
+}
+
+.card h3{
+    font-weight:700;
+    color:#0f172a;
+}
+
+.card h6{
+    color:#64748b;
+    font-size:14px;
+    font-weight:600;
+}
+
+.stat-icon{
+    font-size:3rem;
+    opacity:.2;
+}
+
+.quick-card-icon{
+    font-size:3rem;
+    margin-bottom:1rem;
+    color:#2563eb;
+}
+
+/* ==========================
+   FORMULAIRES
+========================== */
+
+.form-control,
+.form-select{
+    border:2px solid #e2e8f0;
+    border-radius:12px;
+    padding:12px;
+    transition:.3s;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+}
+
+.form-label{
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+/* ==========================
+   BOUTONS
+========================== */
+
+.btn{
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+.btn-primary{
+    background:#2563eb;
+    border:none;
+}
+
+.btn-success{
+    border:none;
+}
+
+.btn-warning{
+    border:none;
+}
+
+.btn-danger{
+    border:none;
+}
+
+/* ==========================
+   TABLES
+========================== */
+
+.table{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.table thead{
+    background:#e2e8f0;
+}
+
+.table thead th{
+    padding:15px;
+    border:none;
+    font-size:14px;
+    text-transform:uppercase;
+}
+
+.table tbody td{
+    padding:15px;
+    vertical-align:middle;
+}
+
+.table tbody tr{
+    transition:.3s;
+}
+
+.table tbody tr:hover{
+    background:#f8fafc;
+}
+
+/* ==========================
+   BADGES
+========================== */
+
+.badge{
+    padding:8px 12px;
+    border-radius:20px;
+}
+
+/* ==========================
+   QUICK NAVIGATION
+========================== */
+
+.quick-nav{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    z-index:999;
+}
+
+.quick-nav a{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.quick-nav a:hover{
+    transform:scale(1.1);
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#0f172a !important;
+    color:white;
+    margin-top:50px;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.card{
+    animation:fadeUp .5s ease;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .navbar-brand{
+        font-size:1.4rem;
+    }
+
+    .quick-nav{
+        right:10px;
+        bottom:10px;
+    }
+
+    .quick-nav a{
+        width:50px;
+        height:50px;
+    }
+}
